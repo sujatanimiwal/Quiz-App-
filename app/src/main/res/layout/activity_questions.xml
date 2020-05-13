@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stayhumble">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.javaquiz.Questions"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/Ques_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/almendra"
+            android:paddingLeft="20dp"
+            android:text="@string/Ques1"
+            android:textColor="@color/text"
+            android:textSize="25sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            >
+
+            <RadioButton
+                android:id="@+id/ques1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Ques_1"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra"
+                android:text="Oxygen"
+                android:textSize="20sp"
+                />
+
+        <RadioButton
+            android:id="@+id/ques1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton"
+            android:text="Hydrogen Sulphide"
+            android:layout_weight="1"
+            android:onClick="updateRadioScore"
+            android:fontFamily="@font/almendra"
+            android:textSize="20sp"/>
+
+    <RadioButton
+        android:id="@+id/ques1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radioButton2"
+        android:text="Carbon dioxide"
+        android:layout_weight="1"
+        android:fontFamily="@font/almendra"
+        android:textSize="20sp"
+        />
+
+    <RadioButton
+        android:id="@+id/ques1_4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radioButton3"
+        android:text="Nitrogen"
+        android:layout_weight="1"
+        android:fontFamily="@font/almendra"
+        android:textSize="20sp"
+        />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Ques_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/Ques2"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:fontFamily="@font/almendra"/>
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/ques2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Ques_1"
+            android:layout_weight="1"
+            android:text="Tin"
+            android:fontFamily="@font/almendra"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/ques2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton"
+            android:text="Mercury"
+            android:layout_weight="1"
+            android:onClick="updateRadioScore"
+            android:fontFamily="@font/almendra"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/ques2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton2"
+            android:text="Lead"
+            android:layout_weight="1"
+            android:fontFamily="@font/almendra"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/ques2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioButton3"
+            android:text="Zinc"
+            android:layout_weight="1"
+            android:fontFamily="@font/almendra"
+            android:textSize="20sp"
+            />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Ques_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/Ques3"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:fontFamily="@font/almendra"
+            />
+
+
+        <CheckBox
+                android:id="@+id/ques3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Ques_1"
+                android:layout_weight="1"
+                android:text="Gold"
+                android:onClick="updateCheckScore"
+                android:fontFamily="@font/almendra"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ques3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/radioButton"
+                android:text="Mercury"
+                android:layout_weight="1"
+                android:onClick="updateCheckScore"
+                android:fontFamily="@font/almendra"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ques3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/radioButton2"
+                android:text="Silver"
+                android:layout_weight="1"
+                android:onClick="updateCheckScore"
+                android:fontFamily="@font/almendra"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ques3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/radioButton3"
+                android:text="Copper"
+                android:layout_weight="1"
+                android:onClick="updateCheckScore"
+                android:fontFamily="@font/almendra"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                />
+
+        <TextView
+            android:id="@+id/Ques_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/Ques4"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:fontFamily="@font/almendra"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name"
+            android:paddingLeft="20sp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/Ques_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/Ques5"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:fontFamily="@font/almendra"/>
+
+        <EditText
+            android:id="@+id/gas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Gas"
+            android:paddingLeft="20sp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="#4FC3F7"
+        android:onClick="showToast"
+        android:text="Submit"
+        android:textColor="@color/text"
+        android:fontFamily="@font/almendra"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
+</ScrollView>
